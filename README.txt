@@ -2,7 +2,7 @@
 
  Quadruped Robot with NodeMCU ESP8266 (WiFi Remote Control)
 A simple yet functional four-legged spider robot built using ice cream sticks, 4 servo motors, and a NodeMCU ESP8266. 
-Controlled via a mobile-friendly web interface over WiFi, including direction buttons and 360° spin capability.
+Controlled via a mobile-friendly web interface over WiFi, including direction buttons.
 
 
 🖥️ How to Upload Code? 
