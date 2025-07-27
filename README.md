@@ -38,7 +38,6 @@ A WiFi-controlled quadruped robot built using NodeMCU ESP8266 and servo motors. 
 | s3    | Back Left     | D5       | GPIO14        |
 | s4    | Back Right    | D6       | GPIO12        |
 
-![Wiring Diagram](https://raw.githubusercontent.com/danial-blackhat/esp8266-quadruped-robot/main/docs/wiring-diagram.png) <!-- Replace with actual diagram URL -->
 
 ---
 
