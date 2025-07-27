@@ -1,52 +1,75 @@
-//---------------------------------------------------------------------------------------------------//
+# Quadruped Robot with ESP8266 WiFi Control 🤖📶
 
- Quadruped Robot with NodeMCU ESP8266 (WiFi Remote Control)
-A simple yet functional four-legged spider robot built using ice cream sticks, 4 servo motors, and a NodeMCU ESP8266. 
-Controlled via a mobile-friendly web interface over WiFi, including direction buttons.
+[![ESP8266](https://img.shields.io/badge/ESP8266-NodeMCU-red)](https://www.espressif.com/en/products/socs/esp8266)
+[![Arduino](https://img.shields.io/badge/Arduino%20IDE-Compatible-blue)](https://www.arduino.cc/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
+![Quadruped Robot](https://via.placeholder.com/800x400.png?text=Robot+Demo) <!-- Replace with actual image URL -->
 
-🖥️ How to Upload Code? 
-Install Arduino IDE
+A WiFi-controlled quadruped robot built using NodeMCU ESP8266 and servo motors. Controlled through a mobile-friendly web interface with real-time movement commands.
 
-Add ESP8266 board manager via URL: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+## Features ✨
 
-Install Required Libraries
+- **Wireless Control** - WiFi-based control via web interface
+- **Mobile Responsive** - Works on any smartphone/tablet
+- **Four-Legged Mobility** - Omnidirectional movement capabilities
+- **Simple Construction** - Built with accessible materials (ice cream sticks)
+- **Low Power Consumption** - Efficient motor control system
+- **Access Point Mode** - Creates its own WiFi network for direct control
 
-ESP8266WiFi.h (included with ESP8266 board)
+## Hardware Requirements 🛠️
 
-Connect and Upload
+| Component          | Quantity | Notes                          |
+|--------------------|----------|--------------------------------|
+| NodeMCU ESP8266    | 1        | Main controller board          |
+| Micro Servo Motors | 4        | SG90 or equivalent             |
+| Ice Cream Sticks   | 10-15    | For body structure             |
+| Jumper Wires       | 10+      | For connections                |
+| 5V Power Supply    | 1        | Battery pack or USB power bank |
+| Breadboard         | 1        | Optional for prototyping       |
 
-Choose correct board: NodeMCU 1.0 (ESP-12E Module)
+## Wiring Diagram 🔌
 
-Select COM port
+| Servo | Function      | GPIO Pin | NodeMCU Label |
+|-------|---------------|----------|---------------|
+| s1    | Front Left    | D1       | GPIO5         |
+| s2    | Front Right   | D2       | GPIO4         |
+| s3    | Back Left     | D5       | GPIO14        |
+| s4    | Back Right    | D6       | GPIO12        |
 
-Click Upload
+![Wiring Diagram](https://via.placeholder.com/400x300.png?text=Wiring+Diagram) <!-- Replace with actual diagram URL -->
 
-//---------------------------------------------------------------------------------------------------//
+## Installation & Setup ⚙️
 
-🔌 Wiring Reference (Servo Pins)
-Servo	Function	GPIO Pin	   NodeMCU Label
-s1	Front Left	   D1	               GPIO5
-s2	Front Right	   D2	               GPIO4
-s3	Back Left	   D5	              GPIO14
-s4	Back Right	   D6	              GPIO12
+### 1. Arduino IDE Configuration
+1. Install [Arduino IDE](https://www.arduino.cc/en/software)
+2. Add ESP8266 board support:
+   - Go to `File > Preferences`
+   - Add to Additional Boards Manager URLs:
+     ```
+     http://arduino.esp8266.com/stable/package_esp8266com_index.json
+     ```
+3. Install ESP8266 boards package:
+   - `Tools > Board > Boards Manager`
+   - Search for "esp8266" and install
 
-//---------------------------------------------------------------------------------------------------//
+### 2. Upload Code to NodeMCU
+1. Connect NodeMCU via USB
+2. Select board:
+   - `Tools > Board > NodeMCU 1.0 (ESP-12E Module)`
+3. Select correct COM port
+4. Upload the robot control sketch
 
+### 3. Required Libraries
+The project uses these built-in libraries:
+- `ESP8266WiFi.h`
+- `ESP8266WebServer.h`
+- `Servo.h`
 
-Access Web Interface
-Connect your device to the robot’s WiFi hotspot (e.g., "Quadruped_Robot")
+## Usage Instructions 🎮
 
-Open browser and go to:
-http://192.168.4.1
-
-Use the on-screen buttons to move the robot.
-
-
-//---------------------------------------------------------------------------------------------------//
-
-
-Created By
-Wan Muhammad Danial
-Freelance IT Technician & Embedded Systems Developer
-Email : mrdanial2791@outlook.my
+1. Power on the robot
+2. Connect to its WiFi network:
+   - SSID: `Quadruped_Robot`
+   - Password : please refer to your sketch (.ino) 
+3. Open web browser to:
