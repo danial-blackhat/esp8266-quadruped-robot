@@ -4,7 +4,7 @@
 [![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-Compatible-blue)](https://www.arduino.cc/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-![Quadruped Robot](https://github.com/danial-blackhat/esp8266-quadruped-robot/blob/main/Demostration%20.mp4)
+![Quadruped Robot]
 
 A WiFi-controlled quadruped robot built using NodeMCU ESP8266 and servo motors. The robot is operated via a mobile-friendly web interface, enabling real-time movement commands and omnidirectional control. Designed for educational and prototyping purposes with simple construction and low power requirements.
 
